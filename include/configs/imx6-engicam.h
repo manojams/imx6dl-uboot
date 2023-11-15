@@ -33,7 +33,9 @@
 	"fdt_high=0xffffffff\0" \
 	"fdt_addr=" FDT_ADDR "\0" \
 	"boot_fdt=try\0" \
+	"mmcdev=0\0" \
 	"mmcpart=1\0" \
+	"mmcroot=/dev/mmcblk0p2 rootwait rw\0" \
 	"nandroot=ubi0:rootfs rootfstype=ubifs\0" \
 	"mmcautodetect=yes\0" \
 	"mmcargs=setenv bootargs console=${console},${baudrate} " \
